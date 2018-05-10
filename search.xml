@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[测试catalog]]></title>
+    <url>%2F2018%2F05%2F10%2Ftest%2F</url>
+    <content type="text"><![CDATA[###这里是内容]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[安装hexo+github]]></title>
+    <url>%2F2018%2F03%2F29%2Fhexo-github%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[第一个博客]]></title>
+    <url>%2F2018%2F03%2F28%2F%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[到这里就要结束了]]></content>
+  </entry>
+</search>
