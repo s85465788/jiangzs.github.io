@@ -11,7 +11,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
-
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 2px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: red;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
 
 
 
@@ -68,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="npm,hexo,github," />
 
 
 
@@ -80,13 +94,14 @@
 
 
 <meta name="description" content="###这里是内容">
+<meta name="keywords" content="npm,hexo,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试catalog">
 <meta property="og:url" content="http://jiangzs.github.io/2018/05/10/test/index.html">
 <meta property="og:site_name" content="姜忠尚">
 <meta property="og:description" content="###这里是内容">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-10T06:16:11.614Z">
+<meta property="og:updated_time" content="2018-05-11T01:45:47.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试catalog">
 <meta name="twitter:description" content="###这里是内容">
@@ -190,6 +205,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
@@ -257,7 +282,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JohnSnow">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -365,6 +390,16 @@
 	</div>
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/npm/" <i class="fa fa-tag"></i> npm</a>
+          
+            <a href="/tags/hexo/" <i class="fa fa-tag"></i> hexo</a>
+          
+            <a href="/tags/github/" <i class="fa fa-tag"></i> github</a>
+          
+        </div>
+      
 
       
       
@@ -439,6 +474,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="JohnSnow" />
+            
               <p class="site-author-name" itemprop="name">JohnSnow</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -467,6 +506,15 @@
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -520,7 +568,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共字</span>
+  <span class="post-count">博客全站共13字</span>
 </div>
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
