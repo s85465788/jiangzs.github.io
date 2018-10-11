@@ -96,7 +96,7 @@
 <meta name="description" content="越努力越幸运">
 <meta property="og:type" content="website">
 <meta property="og:title" content="心亦忧止">
-<meta property="og:url" content="http://jiangzs.github.io/tags/linux/index.html">
+<meta property="og:url" content="http://jiangzs.github.io/tags/Linux/index.html">
 <meta property="og:site_name" content="心亦忧止">
 <meta property="og:description" content="越努力越幸运">
 <meta property="og:locale" content="zh-Hans">
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://jiangzs.github.io/tags/linux/"/>
+  <link rel="canonical" href="http://jiangzs.github.io/tags/Linux/"/>
 
 
 
 
 
-  <title>标签: linux | 心亦忧止</title>
+  <title>标签: Linux | 心亦忧止</title>
   
 
 
@@ -302,7 +302,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>linux<small>标签</small>
+        <h1>Linux<small>标签</small>
         </h1>
       </div>
 
@@ -314,37 +314,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/05/21/shell(一)流程控制、函数/" itemprop="url">
+            <a class="post-title-link" href="/2018/05/22/linux基础/" itemprop="url">
               
-                <span itemprop="name">shell(一)流程控制、函数</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-21T09:08:35+08:00"
-              content="2018-05-21" >
-          05-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/05/20/shell(一)运算符_test/" itemprop="url">
-              
-                <span itemprop="name">shell(一)运算符、test</span>
+                <span itemprop="name">Linux基础命令</span>
               
             </a>
         
@@ -352,37 +324,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-20T19:07:50+08:00"
-              content="2018-05-20" >
-          05-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/05/20/shell(一)变量_数组_传参_输出/" itemprop="url">
-              
-                <span itemprop="name">shell(一)变量_数组_传参_输出</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-20T17:06:50+08:00"
-              content="2018-05-20" >
-          05-20
+              datetime="2018-05-22T17:00:50+08:00"
+              content="2018-05-22" >
+          05-22
         </time>
       </div>
 
@@ -446,7 +390,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -561,7 +505,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共9.4k字</span>
+  <span class="post-count">博客全站共10.4k字</span>
 </div>
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
@@ -992,6 +936,77 @@
               var searchResultList = '<ul class=\"search-result-list\">';
               resultItems.forEach(function (result) {
                 searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
++= result.item;
               })
               searchResultList += "</ul>";
               resultContent.innerHTML = searchResultList;
