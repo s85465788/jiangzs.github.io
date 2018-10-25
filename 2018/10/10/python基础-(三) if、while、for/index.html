@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="心亦忧止">
 <meta property="og:description" content="ifif的基本语法格式如下： 12if 条件：  	条件成立，执行 注意缩进一个tab，或四个空格 12345age = int(input(&quot;请输入年纪：&quot;))if age !=18:	print(&quot;不是18&quot;)	print(&quot;到这是if的代码块&quot;)print(&quot;这是最后无论怎样都会执行的，不再if中&quot;) if else1234if 条件：	条件成立时执行的代码esle:	条件不成立，要做的 1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-11T13:01:24.180Z">
+<meta property="og:updated_time" content="2018-10-17T07:13:17.077Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python基础-(三) if、while、break、continue">
 <meta name="twitter:description" content="ifif的基本语法格式如下： 12if 条件：  	条件成立，执行 注意缩进一个tab，或四个空格 12345age = int(input(&quot;请输入年纪：&quot;))if age !=18:	print(&quot;不是18&quot;)	print(&quot;到这是if的代码块&quot;)print(&quot;这是最后无论怎样都会执行的，不再if中&quot;) if else1234if 条件：	条件成立时执行的代码esle:	条件不成立，要做的 1">
@@ -536,7 +536,11 @@
 </tr>
 </tbody>
 </table>
-
+<h1 id="for"><a href="#for" class="headerlink" title="for"></a>for</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> 集合：</span><br><span class="line">	循环代码</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="keyword">for</span>中没<span class="keyword">break</span>，循环后执行的代码</span><br></pre></td></tr></table></figure>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ul>
+<li>遍历时，一个list包含多个字典，判断某一个字典是否存在指定值，存在退出循环，不存在执行统一提示</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">list = [</span><br><span class="line">	&#123;<span class="string">"name"</span>:<span class="string">"jiang"</span>,<span class="string">"age"</span>:<span class="number">20</span>&#125;,</span><br><span class="line">	&#123;<span class="string">"name"</span>:<span class="string">"wang"</span>,<span class="string">"age"</span>:<span class="number">18</span>&#125;</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">fin = <span class="string">"jiang"</span></span><br><span class="line"><span class="keyword">for</span> nam <span class="keyword">in</span> list:</span><br><span class="line">	<span class="keyword">if</span> nam[<span class="string">"name"</span>] == fin:</span><br><span class="line">		print(<span class="string">"got it"</span>)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	print(<span class="string">"meizhaodao"</span>)</span><br><span class="line">print(<span class="string">"done"</span>)</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -667,7 +671,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -758,7 +762,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#if"><span class="nav-number">1.</span> <span class="nav-text">if</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#if的基本语法"><span class="nav-number">1.1.</span> <span class="nav-text">if的基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#if-else"><span class="nav-number">1.2.</span> <span class="nav-text">if else</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#or"><span class="nav-number">1.2.1.</span> <span class="nav-text">or</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#not"><span class="nav-number">1.2.2.</span> <span class="nav-text">not</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#elif"><span class="nav-number">1.3.</span> <span class="nav-text">elif</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#if嵌套"><span class="nav-number">1.4.</span> <span class="nav-text">if嵌套</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#剪刀石头布"><span class="nav-number">1.5.</span> <span class="nav-text">剪刀石头布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符"><span class="nav-number">1.6.</span> <span class="nav-text">运算符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#while"><span class="nav-number">2.</span> <span class="nav-text">while</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本语法"><span class="nav-number">2.1.</span> <span class="nav-text">基本语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#break-continue"><span class="nav-number">3.</span> <span class="nav-text">break continue</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#while-循环嵌套"><span class="nav-number">3.1.</span> <span class="nav-text">while 循环嵌套</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#转义字符"><span class="nav-number">4.</span> <span class="nav-text">转义字符</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#if"><span class="nav-number">1.</span> <span class="nav-text">if</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#if的基本语法"><span class="nav-number">1.1.</span> <span class="nav-text">if的基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#if-else"><span class="nav-number">1.2.</span> <span class="nav-text">if else</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#or"><span class="nav-number">1.2.1.</span> <span class="nav-text">or</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#not"><span class="nav-number">1.2.2.</span> <span class="nav-text">not</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#elif"><span class="nav-number">1.3.</span> <span class="nav-text">elif</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#if嵌套"><span class="nav-number">1.4.</span> <span class="nav-text">if嵌套</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#剪刀石头布"><span class="nav-number">1.5.</span> <span class="nav-text">剪刀石头布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符"><span class="nav-number">1.6.</span> <span class="nav-text">运算符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#while"><span class="nav-number">2.</span> <span class="nav-text">while</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本语法"><span class="nav-number">2.1.</span> <span class="nav-text">基本语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#break-continue"><span class="nav-number">3.</span> <span class="nav-text">break continue</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#while-循环嵌套"><span class="nav-number">3.1.</span> <span class="nav-text">while 循环嵌套</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#转义字符"><span class="nav-number">4.</span> <span class="nav-text">转义字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#for"><span class="nav-number">5.</span> <span class="nav-text">for</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用场景"><span class="nav-number">5.1.</span> <span class="nav-text">应用场景</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -798,7 +802,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共13.5k字</span>
+  <span class="post-count">博客全站共15.9k字</span>
 </div>
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
